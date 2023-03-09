@@ -1,4 +1,4 @@
-import Application from '@/components/Application'
+import ImageGenerator from '@/components/ImageGenerator'
 import Head from 'next/head'
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/" />
       </Head>
       <main>
-        <Application/>
+        <ImageGenerator/>
       </main>
     </>
   )
