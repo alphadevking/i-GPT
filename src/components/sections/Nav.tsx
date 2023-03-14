@@ -39,7 +39,7 @@ export const Nav = () => {
 
     return (
         <nav className="bg-gray-800 py-2 fixed top-0 w-full">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
                 <Link href='/' className="flex gap-1">
                     <img className="h-8" src="/i-gpt_white.png" alt="Logo" />
                     <span className="text-gray-200 mt-1 font-bold">i-GPT</span>
@@ -52,13 +52,10 @@ export const Nav = () => {
                         animate={isOpen ? "open" : "closed"}
                     >
                         <motion.li variants={menuItemVariants}>
-                            <Link href="#">Home</Link>
+                            <Link href="/">Home</Link>
                         </motion.li>
                         <motion.li variants={menuItemVariants}>
-                            <Link href="#">About</Link>
-                        </motion.li>
-                        <motion.li variants={menuItemVariants}>
-                            <Link href="#">Contact</Link>
+                            <Link href="/image">Image Generator</Link>
                         </motion.li>
                     </motion.ul>
                 </div>
@@ -81,18 +78,13 @@ export const Nav = () => {
                     animate={isOpen ? "open" : "closed"}
                 >
                     <motion.li variants={menuItemVariants}>
-                        <Link href="#" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700">
+                        <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700">
                             Home
                         </Link>
                     </motion.li>
                     <motion.li variants={menuItemVariants}>
-                        <Link href="#" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700">
-                            About
-                        </Link>
-                    </motion.li>
-                    <motion.li variants={menuItemVariants}>
-                        <Link href="#" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700">
-                            Contact
+                        <Link href="/image" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700">
+                            Image Generator
                         </Link>
                     </motion.li>
                 </motion.ul>

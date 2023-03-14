@@ -1,8 +1,11 @@
-import ImageGenerator from "@/components/ImageGenerator"
+import ImageGenerator from "@/components/customPages/ImageGenerator"
+import Layout from "@/pageSetup/Layout"
 
 const TextToImage = () => {
     return (
-        <ImageGenerator/>
+        <Layout navbar>
+            <ImageGenerator />
+        </Layout>
     )
 }
 
