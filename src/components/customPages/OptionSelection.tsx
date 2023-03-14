@@ -3,9 +3,9 @@ import Motion from "@/animations/motion"
 
 const OptionSelection = () => {
     return (
-        <div className="grid gap-5">
+        <div className="grid gap-5 z-0">
             <div className="text-center py-5">
-                <div className="text-2xl font-bold"><span className="text-sm font-light">Welcome to&nbsp;</span>i-GPT Hub</div>
+                <div className="text-2xl font-bold"><span className="text-sm font-light">Welcome to&nbsp;</span>i-GPT AI Hub</div>
             </div>
             <div className="grid grid-cols-2 px-5 md:w-1/2 mx-auto gap-6">
                 {

@@ -39,11 +39,11 @@ export const Nav = () => {
     };
 
     return (
-        <nav className="bg-gray-800 py-2 fixed top-0 w-full">
+        <nav className="bg-gray-800/30 backdrop-blur-md py-2 fixed top-0 w-full z-10">
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
                 <Link href='/' className="flex gap-1">
                     <Image src="/i-gpt_white.png" alt="Logo" width={32} height={32} />
-                    <span className="text-gray-200 mt-1 font-bold">i-GPT</span>
+                    <span className="text-gray-100 mt-1 font-bold">i-GPT</span>
                 </Link>
                 <div className="hidden md:block">
                     <motion.ul
