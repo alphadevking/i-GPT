@@ -1,4 +1,6 @@
 import { GlobalTypes } from '@/pageSetup/global'
+import ErrorBoundary from '@/tools/ErrorBoundary'
+import { ThemeProvider } from 'next-themes'
 import React from 'react'
 
 const AppProvider = ({
@@ -6,7 +8,11 @@ const AppProvider = ({
 } : GlobalTypes ) => {
     return (
         <main className={className}>
-            {children}
+            <ErrorBoundary fallback>
+                <ThemeProvider>
+                    {children}
+                </ThemeProvider>
+            </ErrorBoundary>
         </main>
     )
 }
