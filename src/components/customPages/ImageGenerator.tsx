@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Configuration, OpenAIApi } from 'openai'
 import Link from 'next/link';
 import { FaHome } from 'react-icons/fa';
+import Image from 'next/image';
 
 const configuration = new Configuration({
     apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
@@ -45,6 +46,7 @@ const ImageGenerator = () => {
                     className='ring-1 ring-slate-600/50 rounded-md py-2 px-3 text-sm bg-transparent backdrop-blur focus:outline-none'
                     placeholder='Enter image prompt...'
                     onChange={(e) => setPrompt(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' ? (e.preventDefault(), generateImage()) : null}
                 />
 
                 <div>
@@ -64,7 +66,7 @@ const ImageGenerator = () => {
 
                 <div className=''>
                     {result && (
-                        <img src={result} alt="Generated image" width={1024} height={1024} />
+                        <Image src={result} alt="Generated image" width={1024} height={1024} />
                     )}
                 </div>
             </div>

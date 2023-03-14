@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -41,7 +42,7 @@ export const Nav = () => {
         <nav className="bg-gray-800 py-2 fixed top-0 w-full">
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
                 <Link href='/' className="flex gap-1">
-                    <img className="h-8" src="/i-gpt_white.png" alt="Logo" />
+                    <Image src="/i-gpt_white.png" alt="Logo" width={32} height={32} />
                     <span className="text-gray-200 mt-1 font-bold">i-GPT</span>
                 </Link>
                 <div className="hidden md:block">
