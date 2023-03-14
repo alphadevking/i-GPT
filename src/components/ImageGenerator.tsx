@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Configuration, OpenAIApi } from 'openai'
+import Link from 'next/link';
+import { FaHome } from 'react-icons/fa';
 
 const configuration = new Configuration({
     apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
@@ -66,6 +68,11 @@ const ImageGenerator = () => {
                     )}
                 </div>
             </div>
+
+            <div className='absolute flex top-1/3 right-5'>
+                <Link href='/'><FaHome /></Link>
+            </div>
+        
         </div>
     )
 }

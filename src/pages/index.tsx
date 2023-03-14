@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 import Link from 'next/link'
 
@@ -8,9 +9,9 @@ export default function Home() {
         <title>i-GPT</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/" />
+        <link rel="icon" href="/i-gpt.png" />
       </Head>
-      <main>
+      <main className='pt-14'>
         <Link href='/image'>Image Generator</Link>
       </main>
     </>
