@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { GlobalTypes } from "../globals";
+import { GlobalTypes } from "@/pageSetup/global";
 
 export function Typewriter({ className, text }: GlobalTypes) {
     const [ref, inView] = useInView({

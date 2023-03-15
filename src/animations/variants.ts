@@ -1,5 +1,5 @@
 import { Variants } from 'framer-motion';
-import { GlobalTypes } from './../globals/index';
+import { GlobalTypes } from '@/pageSetup/global';
 
 export interface MotionProps extends GlobalTypes {
     variant?: Variants;
