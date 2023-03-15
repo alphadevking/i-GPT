@@ -7,13 +7,13 @@ const Footer = () => {
         <div className="py-2 absolute bottom-0 w-full px-5">
             <div className="mx-auto px-4 sm:px-6 lg:px-8 grid justify-center">
                 <div className="grid grid-flow-col w-fit mx-auto space-x-4">
-                    <Link href="/" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://twitter.com/alpha_devking" target="_blank" rel="noopener noreferrer">
                         <FaTwitter className="text-blue-700 hover:text-blue-600 cursor-pointer" size={24} />
                     </Link>
                     <Link href="https://github.com/alphadevking" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="text-gray-700 hover:text-gray-500 cursor-pointer" size={24} />
                     </Link>
-                    <Link href="/" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://www.linkedin.com/in/favour-orukpe-31432725b" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="text-cyan-700 hover:text-cyan-600 cursor-pointer" size={24} />
                     </Link>
                 </div>
