@@ -47,7 +47,7 @@ const ImageGenerator = () => {
   }
 
   return (
-    <div className='grid grid-cols-3 justify-center items-center'>
+    <div className='grid px-5 md:px-[50%] justify-center items-center'>
             <div className='grid gap-3 text-center'>
                 <div className='text-xl font-semibold'>
 Generate Images using OpenAI
