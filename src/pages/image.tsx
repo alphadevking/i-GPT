@@ -11,7 +11,7 @@ const TextToImage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/i-gpt.png" />
             </Head>
-            <Layout navbar>
+            <Layout navbar footer>
                 <ImageGenerator />
             </Layout>
         </>
