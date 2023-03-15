@@ -10,7 +10,7 @@ const Footer = () => {
                     <Link href="https://twitter.com/alpha_devking" target="_blank" rel="noopener noreferrer">
                         <FaTwitter className="text-blue-700 hover:text-blue-600 cursor-pointer" size={24} />
                     </Link>
-                    <Link href="https://github.com/alphadevking" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://github.com/alphadevking/i-GPT" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="text-gray-700 hover:text-gray-500 cursor-pointer" size={24} />
                     </Link>
                     <Link href="https://www.linkedin.com/in/favour-orukpe-31432725b" target="_blank" rel="noopener noreferrer">
