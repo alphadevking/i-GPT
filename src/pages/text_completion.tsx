@@ -66,6 +66,11 @@ const TextCompletion = () => {
                                 className="ring-1 ring-slate-600/50 rounded-md py-4 px-7 text-xs bg-transparent backdrop-blur focus:outline-none"
                             />
                         </div>
+                        <div>
+                            {errorMessage && (
+                                <div className='text-red-500 text-sm'>{errorMessage}</div>
+                            )}
+                        </div>
                         <button
                             type="submit"
                             className="px-2 py-2 bg-slate-600/50 backdrop-blur rounded-md hover:bg-slate-600/40 transition-all duration-300 text-slate-50"
@@ -73,9 +78,6 @@ const TextCompletion = () => {
                             Ask
                         </button>
                     </form>
-                    {errorMessage && (
-                        <div className="bg-red-500 text-white text-sm py-2 px-4 rounded mt-4">{errorMessage}</div>
-                    )}
                     {result && (
                         <div className="ring-slate-600/50 rounded-lg shadow p-6 mt-4">
                             <p className="opacity-30 font-medium mb-2">{prompt}</p>

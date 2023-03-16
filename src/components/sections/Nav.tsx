@@ -58,6 +58,12 @@ export const Nav = () => {
                         <motion.li variants={menuItemVariants}>
                             <Link href="/image">Image Generator</Link>
                         </motion.li>
+                        <motion.li variants={menuItemVariants}>
+                            <Link href="/text_completion">Text Completion</Link>
+                        </motion.li>
+                        <motion.li variants={menuItemVariants}>
+                            <Link href="/audio_to_text">Speech to Text</Link>
+                        </motion.li>
                     </motion.ul>
                 </div>
                 <div className="md:hidden">
@@ -86,6 +92,16 @@ export const Nav = () => {
                     <motion.li variants={menuItemVariants}>
                         <Link href="/image" className="block px-3 py-2 rounded-md font-medium text-white hover:text-white hover:bg-gray-700">
                             Image Generator
+                        </Link>
+                    </motion.li>
+                    <motion.li variants={menuItemVariants}>
+                        <Link href="/text_completion" className="block px-3 py-2 rounded-md font-medium text-white hover:text-white hover:bg-gray-700">
+                            Text Completion
+                        </Link>
+                    </motion.li>
+                    <motion.li variants={menuItemVariants}>
+                        <Link href="/audio_to_text" className="block px-3 py-2 rounded-md font-medium text-white hover:text-white hover:bg-gray-700">
+                            Speech to Text
                         </Link>
                     </motion.li>
                 </motion.ul>
