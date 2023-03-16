@@ -2,7 +2,7 @@ export const ArrayItems = [
     {
         id:'text_completion',
         name: 'Text Completion',
-        href: '/textCompletion',
+        href: '/text_completion',
         description: 'Answer questions & completes text based on existing knowledge.',
     },
     {
