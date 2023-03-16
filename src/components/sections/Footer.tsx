@@ -3,6 +3,10 @@ import React from 'react';
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
+
+    const date_now = new Date()
+    const currentYear = date_now.getFullYear()
+    
     return (
         <div className="py-2 absolute bottom-0 w-full px-5">
             <div className="mx-auto px-4 sm:px-6 lg:px-8 grid justify-center">
@@ -17,7 +21,7 @@ const Footer = () => {
                         <FaLinkedin className="text-cyan-700 hover:text-cyan-600 cursor-pointer" size={24} />
                     </Link>
                 </div>
-                <p className="opacity-50 text-sm text-center py-2">Copyright © 2023 | <b>i-GPT</b></p>
+                <p className="opacity-50 text-sm text-center py-2">Copyright © {currentYear} | <b>i-GPT</b></p>
             </div>
         </div>
     );

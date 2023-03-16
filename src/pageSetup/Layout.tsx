@@ -14,7 +14,7 @@ const Layout = ({
     children, navbar, footer
 } : LayoutTypes ) => {
     return (
-        <AppProvider className='min-h-screen relative'>
+        <AppProvider className='min-h-screen relative transition-all duration-300'>
 
             <span className='flex fixed z-50 right-0 top-1/3 shadow-xl backdrop-blur-[3px] hover:pr-3 rounded-l-3xl align-middle duration-300 text-xl animate-bounce'>
                 <ThemeSwitch />

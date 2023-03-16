@@ -73,18 +73,18 @@ export const Nav = () => {
             </div>
             <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
                 <motion.ul
-                    className="px-2 pt-2 pb-3 space-y-1 sm:px-3"
+                    className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-sm"
                     variants={menuVariants}
                     initial="closed"
                     animate={isOpen ? "open" : "closed"}
                 >
                     <motion.li variants={menuItemVariants}>
-                        <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700">
+                        <Link href="/" className="block px-3 py-2 rounded-md font-medium text-white hover:text-white hover:bg-gray-700">
                             Home
                         </Link>
                     </motion.li>
                     <motion.li variants={menuItemVariants}>
-                        <Link href="/image" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-white hover:bg-gray-700">
+                        <Link href="/image" className="block px-3 py-2 rounded-md font-medium text-white hover:text-white hover:bg-gray-700">
                             Image Generator
                         </Link>
                     </motion.li>

@@ -1,5 +1,5 @@
 import { ArrayItems } from "@/AIOptions"
-import Motion from "@/animations/motion"
+import Link from "next/link"
 
 const OptionSelection = () => {
     return (
@@ -11,10 +11,10 @@ const OptionSelection = () => {
                 {
                     ArrayItems.map((val, key)=>{
                         return (
-                            <div key={key} className="border border-current/20 rounded-xl p-5 text-center grid gap-1">
-                                <div id={val.id} className="text-md">{val.name}</div>
+                            <Link href={val.href} key={key} className="duration-300 transition-all hover:bg-white hover:text-slate-900 cursor-pointer select-none border border-current/20 rounded-xl p-7 text-center grid gap-2">
+                                <div id={val.id} className="text-sm">{val.name}</div>
                                 <div className="text-xs opacity-70">{val.description}</div>
-                            </div>
+                            </Link>
                         )
                     })
                 }

@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/i-gpt.png" />
       </Head>
       <Layout navbar footer>
-        <OptionSelection/>
+        <OptionSelection />
       </Layout>
     </>
   )
