@@ -1,6 +1,6 @@
 
+import Landing from '@/components/customPages/landing'
 import Layout from '@/pageSetup/Layout'
-import OptionSelection from '@/components/customPages/OptionSelection'
 import Head from 'next/head'
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/i-gpt.png" />
       </Head>
       <Layout navbar footer>
-        <OptionSelection />
+        <Landing />
       </Layout>
     </>
   )

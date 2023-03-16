@@ -1,7 +1,7 @@
 import { ArrayItems } from "@/AIOptions"
 import Link from "next/link"
 
-const OptionSelection = () => {
+const Landing = () => {
     return (
         <div className="grid gap-5 z-0">
             <div className="text-center py-5">
@@ -23,4 +23,4 @@ const OptionSelection = () => {
     )
 }
 
-export default OptionSelection
+export default Landing
