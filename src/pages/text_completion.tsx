@@ -26,7 +26,7 @@ const TextCompletion = () => {
 
             const answer = res?.data?.choices?.[0]?.text?.trim() ?? null;
 
-            console.log("answer:",answer)
+            // console.log("answer:",answer)
 
             if (answer !== null) {
                 setResult(answer);
