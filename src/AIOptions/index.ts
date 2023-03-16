@@ -12,10 +12,10 @@ export const ArrayItems = [
         description: 'Corrects sentences into standard English.',
     },
     {
-        id: 'summarize_for_a_2nd_grader',
-        name: 'Summarize for a 2nd grader',
-        href: '',
-        description: 'Translate difficult text into simpler concepts.',
+        id: 'audio_to_text',
+        name: 'Transcribe audio to text',
+        href: '/audio_to_text',
+        description: 'Convert audio files to text.',
     },
     {
         id: 'image_generator',

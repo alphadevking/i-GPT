@@ -74,7 +74,7 @@ const TextCompletion = () => {
                         </button>
                     </form>
                     {errorMessage && (
-                        <div className="bg-red-500 text-white font-bold py-2 px-4 rounded mt-4">{errorMessage}</div>
+                        <div className="bg-red-500 text-white text-sm py-2 px-4 rounded mt-4">{errorMessage}</div>
                     )}
                     {result && (
                         <div className="ring-slate-600/50 rounded-lg shadow p-6 mt-4">
